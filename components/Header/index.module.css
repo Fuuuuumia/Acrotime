@@ -21,18 +21,22 @@
   color: #2563eb;
 }
 
-.nav {
+/* 🔁 中央部を可変に */
+.center {
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-.navLink {
+.center a {
   text-decoration: none;
   color: #374151;
   font-weight: 500;
 }
 
-.navLink:hover {
+.center a:hover {
   color: #1e3a8a;
 }
 

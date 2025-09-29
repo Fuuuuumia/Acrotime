@@ -5,23 +5,23 @@ import styles from "./index.module.css";
 import Button from "@/components/Button";
 
 type HeaderProps = {
-  user?: string | null; // ログイン中のユーザー（なければ null）
+  user?: string | null; // ログイン中のユーザー
   onSignOut?: () => void;
+  centerContent?: React.ReactNode; // ← ここを追加（中央の可変エリア）
 };
 
-export default function Header({ user, onSignOut }: HeaderProps) {
+export default function Header({ user, onSignOut, centerContent }: HeaderProps) {
   return (
     <header className={styles.header}>
+      {/* 左側：ロゴ */}
       <div className={styles.logo}>
         <Link href="/">Acrotime</Link>
       </div>
 
-      <nav className={styles.nav}>
-        <Link href="/about" className={styles.navLink}>もっと知る</Link>
-        <Link href="/features" className={styles.navLink}>Acrotimeでできること</Link>
-        <Link href="/contact" className={styles.navLink}>お問い合わせ</Link>
-      </nav>
+      {/* 中央部分：ページごとに差し替え */}
+      <div className={styles.center}>{centerContent}</div>
 
+      {/* 右側：認証 */}
       <div className={styles.auth}>
         {user ? (
           <Button onClick={onSignOut}>ログアウト</Button>
