@@ -75,7 +75,7 @@ export default function AuthForm() {
         </button>
       </div>
 
-      <h2 className={styles.title}>{mode === "signin" ? "ログイン" : "新規登録"}</h2>
+      <h2 className={styles.title}>{mode === "signin" ? "サインイン" : "サインアップ"}</h2>
 
       <form
         onSubmit={mode === "signin" ? handleSignIn : handleSignUp}
@@ -113,8 +113,8 @@ export default function AuthForm() {
           {loading
             ? "処理中..."
             : mode === "signin"
-            ? "ログイン"
-            : "新規登録"}
+            ? "サインイン"
+            : "サインアップ"}
         </button>
 
         {error && <p className={styles.error}>{error}</p>}
