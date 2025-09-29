@@ -1,0 +1,19 @@
+.title-component {
+    text-align: center;
+    font-weight: bold;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+
+.description {
+    padding: 0px 10px;
+}
+
+Button {
+    margin: 0px 0px;
+}
+
+.header-component {
+    float: right;
+}
