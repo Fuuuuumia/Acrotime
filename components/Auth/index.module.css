@@ -1,3 +1,5 @@
+/* Auth/index.module.css */
+
 .container {
   width: 100%;
   max-width: 400px;
@@ -25,6 +27,7 @@
   font-size: 1rem;
   border: 1px solid #d1d5db;
   border-radius: 8px;
+  margin-bottom: 0.5rem; /* パスワード確認欄との間隔調整 */
 }
 
 .button {
@@ -45,4 +48,32 @@
 .error {
   color: #dc2626;
   margin-top: 0.5rem;
+}
+
+/* タブ切替用スタイル */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease, border-bottom 0.2s ease, background 0.2s ease;
+}
+
+.tab:hover {
+  color: #2563eb;
+}
+
+.active {
+  background: #f3f4f6; /* 薄いグレーで選択状態をわかりやすく */
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
 }
