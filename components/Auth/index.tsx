@@ -26,7 +26,7 @@ export default function AuthForm() {
     if (error) {
       setError(error.message);
     } else {
-      window.location.href = "/calendar";
+      window.location.href = "/console";
     }
   };
 

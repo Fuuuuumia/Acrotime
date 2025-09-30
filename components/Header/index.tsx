@@ -15,7 +15,7 @@ export default function Header({ user, onSignOut, centerContent }: HeaderProps) 
     <header className={styles.header}>
       {/* 左側：ロゴ */}
       <div className={styles.logo}>
-        <Link href="/">Acrotime</Link>
+        <Link href="/">Acrodash</Link>
       </div>
 
       {/* 中央部分：ページごとに差し替え */}

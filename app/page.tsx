@@ -30,7 +30,7 @@ export default function HomePage() {
   const navLinks = (
     <>
       <Link href="/about">もっと知る</Link>
-      <Link href="/features">Acrotimeでできること</Link>
+      <Link href="/features">Acrodashでできること</Link>
       <Link href="/contact">お問い合わせ</Link>
     </>
   );
@@ -44,13 +44,13 @@ export default function HomePage() {
       />
 
       <div className="title-component">
-        <h1 className="acrotime">Acrotime</h1>
+        <h1 className="acrotime">Acrodash</h1>
         <p className="description">
-          習慣・プロジェクトを長期的に管理。
+          プロジェクトの進捗を見えやすく。
           <br />
-          毎日のスケジュールを整理し、
+          タスクを体系的に管理し、
           <br />
-          あなたの集中をサポートします。
+          あなたの集中をお手伝いします。
         </p>
 
         <Button onClick={() => (window.location.href = "/signin")}>
